@@ -1,0 +1,61 @@
+
+# xbindkeys
+# why not xdotool? why wmctrl? - Portability.
+
+#"xdotool set_desktop 0 " 
+"   wmctrl -s 0 "
+    m:0x40 + c:10
+    Mod4 + 1
+
+#"xdotool set_desktop 1 " 
+"   wmctrl -s 1 "
+    m:0x40 + c:11
+    Mod4 + 2
+
+#"xdotool set_desktop 2 " 
+"   wmctrl -s 2 "
+    m:0x40 + c:12
+    Mod4 + 3
+
+#"xdotool set_desktop 3 " 
+"   wmctrl -s 3 "
+    m:0x40 + c:13
+    Mod4 + 4
+
+# this will open up an xterm (larger fonts)
+"    xterm -bg black -fg grey -fa 15  "
+    m:0x50 + c:53
+    Mod2+Mod4 + x
+
+# this will max the current win
+"  wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz   "
+    m:0x40 + c:38
+    Mod4 + a
+
+# this will close the active win: wmctrl -c :ACTIVE:
+" wmctrl -c :ACTIVE: "
+    m:0x40 + c:25
+    Mod4 + w
+
+
+"  screen -d -m nxmessage DuckDuckGo ; chromium   http://duckduckgo.com/  "
+    m:0x40 + c:41
+    Mod4 + f
+
+" screen -d -m nxmessage FileManager ; cd ; rox  "
+    m:0x40 + c:26
+    Mod4 + e
+
+
+
+" amixer  set Master 2+ "
+    m:0x40 + c:111
+    Mod4 + Up
+
+" amixer  set Master 2- "
+    m:0x40 + c:116
+    Mod4 + Down
+
+
+
+
